@@ -21,7 +21,7 @@ window.addEventListener("load", function () {
       formData.append("category", sub.value);
 
       // Sending the form data to the server
-      fetch("https://suraj-restaurant-backend.onrender.com/dishes/add", {
+      fetch("https://foodgully.onrender.com/dishes/add", {
         method: "POST",
         body: formData,
       })
@@ -38,7 +38,7 @@ window.addEventListener("load", function () {
     allDishes[i]
       .querySelector(".removeBtn")
       .addEventListener("click", async function () {
-        fetch("https://suraj-restaurant-backend.onrender.com/dishes/deleteDish", {
+        fetch("https://foodgully.onrender.com/dishes/deleteDish", {
           method: "POST",
           body: JSON.stringify({
             _id: allDishes[i].getAttribute("dishId"),
