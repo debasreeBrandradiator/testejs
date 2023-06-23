@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
     let removeBtn = orders[i].querySelector(".completed");
     removeBtn.addEventListener("click", async function () {
       let completedOrder = await axios.post(
-        "http://localhost:3000/order/deleteOrder",
+        "https://suraj-restaurant-backend.onrender.com/order/deleteOrder",
         { _id: orders[i].getAttribute("orderId") }
       );
       console.log(completedOrder);

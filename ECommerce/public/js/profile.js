@@ -7,7 +7,7 @@ window.addEventListener("load", function () {
       let formData = new FormData();
       formData.append("user", file);
 
-      fetch("http://localhost:3000/user/updateprofilephoto", {
+      fetch("https://suraj-restaurant-backend.onrender.com/user/updateprofilephoto", {
         method: "PATCH",
         body: formData,
       })
