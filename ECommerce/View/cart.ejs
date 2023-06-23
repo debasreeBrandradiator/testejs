@@ -84,7 +84,7 @@ window.addEventListener("load", function () {
         dishes = dishes + names[i].innerHTML.trim() + ", ";
         console.log(dishes);
       }
-      let order = await axios.post("http://localhost:3000/order/add", {
+      let order = await axios.post("https://foodgully.onrender.com/order/add", {
         amount: amt,
         dishes: dishes,
       });
