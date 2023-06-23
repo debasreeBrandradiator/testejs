@@ -17,7 +17,7 @@ window.addEventListener("load", function () {
           dishes = dishes + name.innerHTML.trim() + ", ";
         });
 
-        fetch("https://suraj-restaurant-backend.onrender.com/order/add", {
+        fetch("https://foodgully.onrender.com/order/add", {
           method: "POST",
 
           body: JSON.stringify({

@@ -75,7 +75,7 @@ async function cbtnHandler(e) {
     formData.append("confirmPassword", cpw.value);
     formData.append("phone", phone.value);
 
-    fetch("https://suraj-restaurant-backend.onrender.com/user/signup", {
+    fetch("https://foodgully.onrender.com/user/signup", {
       method: "POST",
       body: formData,
     })

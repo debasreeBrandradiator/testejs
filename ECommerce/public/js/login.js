@@ -28,7 +28,7 @@ async function submitbtnHandler(e) {
     e.preventDefault();
     if (email.value && pw.value) {
       console.log(email.value, pw.value);
-      let obj = await fetch("https://suraj-restaurant-backend.onrender.com/user/login", {
+      let obj = await fetch("https://foodgully.onrender.com/user/login", {
         method: "POST",
         body: JSON.stringify({
           email: email.value,
